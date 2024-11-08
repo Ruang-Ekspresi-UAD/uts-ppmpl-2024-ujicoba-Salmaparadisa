@@ -1,0 +1,95 @@
+/* Style umum untuk body dan elemen lainnya */
+body {
+  background-color: rgba(33, 221, 90, 0.603);
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 50%;
+}
+
+/* Style untuk navigasi */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: darkgreen;
+}
+
+/* Style untuk form login */
+#login {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginForm {
+  display: flex;
+  flex-direction: column;
+}
+
+#loginForm label,
+#loginForm input,
+#loginForm button {
+  margin-bottom: 10px;
+}
+
+#loginMessage {
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Style untuk footer */
+footer {
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Layout untuk layar kecil */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin: 5px 0;
+  }
+
+  img {
+    width: 150px;
+  }
+
+  body {
+    margin: 10px;
+  }
+
+  #login {
+    width: 90%;
+    padding: 10px;
+  }
+}
